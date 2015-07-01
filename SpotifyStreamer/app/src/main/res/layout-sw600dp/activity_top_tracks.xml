@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:baselineAligned="false"
+android:divider="?android:attr/dividerHorizontal"
+android:orientation="horizontal"
+tools:context="com.fouomene.spotifystreamer.TopTracksActivity"
+    android:showDividers="middle">
+
+    <!--
+    This layout is a two-pane layout for the Items master/player flow.
+    -->
+
+    <fragment
+        android:id="@+id/toptrack_container"
+        android:name="com.fouomene.spotifystreamer.fragment.TopTracksFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.70"
+        tools:layout="@layout/fragment_top_tracks" />
+
+    <FrameLayout
+        android:id="@+id/fragment_player"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

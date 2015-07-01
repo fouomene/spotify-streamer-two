@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fouomene.spotifystreamer" >
+
+    <!-- This permission is necessary in order for Spotify to perform net access. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TopTracksActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fouomene.spotifystreamer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fouomene.spotifystreamer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PlayerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <provider
+            android:authorities="com.fouomene.spotifystreamer"
+            android:name="com.fouomene.spotifystreamer.data.SpotifyStreamerProvider"
+            android:exported="false"
+            android:syncable="true" />
+    </application>
+
+</manifest>

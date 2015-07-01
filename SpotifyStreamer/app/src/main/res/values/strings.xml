@@ -1,0 +1,44 @@
+<resources>
+    <!--
+     Used in Action Bar, and in AndroidManifest to tell the device the name of this app.
+     It's to keep this short, so your launcher icon isn't displayed with "The greatest Wea"
+     or something similar.
+     -->
+    <string name="app_name">Spotify Streamer</string>
+
+
+    <!--
+         By convention, "action" denotes that this String will be used as the label for an Action,
+         typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
+    -->
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Label for the artist preference [CHAR LIMIT=30] -->
+    <string name="pref_artist_label">Artist Name</string>
+
+    <!-- Key name for storing artist in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_artist_key" translatable="false">artist</string>
+
+    <string name="pref_artist_default" translatable="false">jackson</string>
+
+    <!-- Label for the artist preference [CHAR LIMIT=30] -->
+    <string name="pref_position_label">position</string>
+
+    <!-- Key name for storing artist in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_position_key" translatable="false">position</string>
+
+    <string name="pref_position_default" translatable="false">0</string>
+
+    <string name="action_bar_title_top_track">Top 10 Tracks</string>
+
+    <string name="message_not_found_artist">The artist name is not found, Please refine your search !!</string>
+
+    <string name="check_network">Please check your network connection !!</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

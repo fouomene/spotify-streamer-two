@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for Track list item ) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/list_item_thumbnail_album_imageview"
+        android:layout_width="200px"
+        android:layout_height="200px "
+       />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/list_item_album_textview"
+
+            />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/list_item_track_textview"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
